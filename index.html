@@ -8,63 +8,68 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Password Generator</h1>
+    <div class="wrapper">
 
-         <div class="display-container">
-            <input readonly placeholder="Password" class="display" data-passwordDisplay>
-            <button data-copy>
-                <span data-copyMsg></span>
-                <img src="./assets/copy.svg" alt="Copy" width="23" height="23">
-            </button>
-         </div>
-
-         <div class="input-container">
-
-            <div class="length-container">
-                <p>Password Length</p>
-                <p data-len>0</p>
+        <div class="container">
+            <div class="heading">
+                <h1>Password Generator</h1>
             </div>
 
-            <!-- Slider Section -->
-
-            <input type="range" class="slider" min="1" max="20" step="1" data-lengthSlider>
-
-            <!-- CheckBoxes -->
-
-            <div>
-                <input type="checkbox" name="" id="Uppercase">
-                <label for="Uppercase">Includes Uppercase Letters</label>
+            <div class="display-container">
+               <input readonly placeholder="Password" class="display" data-passwordDisplay>
+               <button data-copy class="data-copy">
+                   <span data-copyMsg></span>
+                   <img src="./assets/copy.svg" alt="Copy" width="23" height="23">
+               </button>
             </div>
-
-            <div>
-                <input type="checkbox" name="" id="Lowercase">
-                <label for="Lowercase">Includes Lowercase Letters</label>
+   
+            <div class="input-container">
+   
+               <div class="length-container">
+                   <p>Password Length</p>
+                   <p data-len>0</p>
+               </div>
+   
+               <!-- Slider Section -->
+   
+               <input type="range" class="slider" min="1" max="20" step="1" data-lengthSlider>
+   
+               <!-- CheckBoxes -->
+   
+               <div>
+                   <input type="checkbox" name="" id="Uppercase">
+                   <label for="Uppercase">Includes Uppercase Letters</label>
+               </div>
+   
+               <div>
+                   <input type="checkbox" name="" id="Lowercase">
+                   <label for="Lowercase">Includes Lowercase Letters</label>
+               </div>
+   
+               <div>
+                   <input type="checkbox" name="" id="Numbers">
+                   <label for="Numbers">Includes Numbers </label>
+               </div>
+   
+               <div>
+                   <input type="checkbox" name="" id="Symbols">
+                   <label for="Symbols">Includes Symbols </label>
+               </div>
+   
+               <!-- Strength Section -->
+   
+               <div class="strength-container">
+                   <p>Strength</p>
+                   <div data-indicator class="indicator"></div>
+               </div>
+   
+   
+               <!-- Generate Button -->
+   
+               <button class="generateButton">Generate Button</button>
+   
             </div>
-
-            <div>
-                <input type="checkbox" name="" id="Numbers">
-                <label for="Numbers">Includes Numbers </label>
-            </div>
-
-            <div>
-                <input type="checkbox" name="" id="Symbols">
-                <label for="Symbols">Includes Symbols </label>
-            </div>
-
-            <!-- Strength Section -->
-
-            <div class="strength-container">
-                <p>Strength</p>
-                <div data-indicator></div>
-            </div>
-
-
-            <!-- Generate Button -->
-
-            <button class="generateButton">Generate Button</button>
-
-         </div>
+        </div>
     </div>
 
     <script src="style.js"></script>
