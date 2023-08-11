@@ -117,7 +117,6 @@
 .length-container
 {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     /* align-items: center; */
 }
@@ -137,20 +136,18 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-top: 1.75rem;
-    margin-bottom: 2rem; 
 }
 .strength-container p{
     color:var(--pl-white); 
     font-size: 1.5rem;
+    letter-spacing: 0.75px;
+    
 }
 .indicator{
     height: 1.5rem;
     width: 1.5rem;
     border-radius: 50%;
-}
-label{
-    color: var(--pl-white);
+    box-shadow: 0 0 50px #ccc;
 }
 
 .generateButton{
@@ -165,7 +162,7 @@ label{
     letter-spacing: 1px; 
     font-weight: 600;
     font-size:  1.25rem;
-
+    
 }
 
 .check{
@@ -198,3 +195,12 @@ label{
     top:-11.5px;
     transform: translateX(-50%)  translateY(40%);
 }
+
+.check label{
+    color: var(--pl-white);
+    font-size: 1.25rem;
+    letter-spacing: 0.75px;
+}
+
+
+
