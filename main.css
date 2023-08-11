@@ -30,7 +30,7 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: var(--dk-violet);
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(231deg, rgba(22, 6, 40, 1) 0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125, 1) 100%);
@@ -52,11 +52,11 @@
 .container{
     display: flex;
     max-width: 1080px;
-    max-height: 1080px;
+    max-height:1080px;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    gap: 1rem;
+    /* gap: 1rem; */
 }
 
 .display-container{
@@ -74,8 +74,8 @@
 .display{
     width: 100%;
     background-color: transparent;
-    outline: none;
     border: none;
+    outline: none;
     padding: 1.15rem 1rem;
     color: var(--vb-yellow);
     font-weight: 600;
